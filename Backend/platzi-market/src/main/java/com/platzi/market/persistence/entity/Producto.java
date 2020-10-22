@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.extern.log4j.Log4j2;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "productos")
@@ -23,7 +24,7 @@ public class Producto {
     private String codigoBarra;
 
     @Column(name = "precio_venta")
-    private Double precioVenta;
+    private BigDecimal precioVenta;
 
     @Column(name = "cantidad_stock")
     private Integer cantidadStock;
